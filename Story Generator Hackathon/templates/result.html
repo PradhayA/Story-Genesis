@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Genesis</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <script src="https://kit.fontawesome.com/7d8f1910d8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/">
+                <div class="logo__container">
+                    <i class="fa-regular fa-hand-peace"></i>
+                    <h1 class="logo__text">Story Genesis</h1>
+                </div>
+            </a>
+            <ul class="nav__links">
+                <li>
+                    <a href="/" class="nav__link">Home</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Matt-JL-Burton/BSL-Translator" target="_blank"
+                        class="nav__link">GitHub</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+<form action = "http://localhost:5000/success" method = "post">
+   <input type='text' name="message" placeholder="Enter your Comment" size='35' required="required" onkeydown="if (event.keyCode == 13) { alert('press generate button');return false;}"/></br>
+
+	</input>
+	</br></br>
+	<input type="submit" value="Generate">
+</form>
+	<h3 style="color:#50808E; margin: 64px 32px">{{prediction}}</h3>
+        </br></br>
+    </main>
+</body>
+	</br></br>
+	</br></br>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="nav__links--container">
+                <ul class="nav__links">
+                    <li>
+                        <a href="/" class="nav__link footer__text hover__effect">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/Matt-JL-Burton/BSL-Translator" target="_blank"
+                            class="nav__link footer__text hover__effect">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="creator__list">
+                <h3 class="footer__text">Creators:</h3>
+                <ul>
+                    <li class="footer__text">Matthew Burton</li>
+                </ul>
+                <ul>
+                    <li class="footer__text">Raj Mohammad</li>
+                </ul>
+                <ul>
+                    <li class="footer__text">Aaliyah Merchant</li>
+                </ul>
+                <ul>
+                    <li class="footer__text">Pradhay Sathyanarayana Setty Amarnath</li>
+                </ul>
+                <ul>
+                    <li class="footer__text">Ishika Dav</li>
+                </ul>
+            </div>
+            <div class="copyright footer__text">
+                © BSL Translator 2022
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
